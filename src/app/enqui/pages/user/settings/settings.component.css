@@ -1,0 +1,8 @@
+#themecolors .selector {
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+#themecolors .selector:hover {
+  transform: scale(1.1);
+}

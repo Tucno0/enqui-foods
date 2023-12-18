@@ -14,8 +14,8 @@
                     </a>
 
                     <ul aria-expanded="false" class="collapse">
-                        <li><a [routerLink]="['account']" routerLinkActive="active">Mi cuenta</a></li>
-                        <li><a [routerLink]="['settings']" routerLinkActive="active" >Configuracion</a></li>
+                        <li><a [routerLink]="['account']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Mi cuenta</a></li>
+                        <li><a [routerLink]="['settings']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" >Configuracion</a></li>
                         <li><a routerLink="/auth/login">Cerrar sesión</a></li>
                     </ul>
                 </li>
@@ -40,7 +40,7 @@
 
                         <ul aria-expanded="false" class="collapse">
                             <li *ngFor="let subMenuItem of menuItem.subMenus">
-                              <a [routerLink]="subMenuItem.url">{{ subMenuItem.title }}</a>
+                              <a [routerLink]="subMenuItem.url" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">{{ subMenuItem.title }}</a>
                             </li>
                         </ul>
                     </li>

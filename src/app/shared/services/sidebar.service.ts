@@ -7,73 +7,51 @@ import { MenuSection } from '../interfaces/sidebar-menu.interface';
 export class SidebarService {
   public sidebarMenu: MenuSection[] = [
     {
-      sectionTitle: 'personal',
+      sectionTitle: 'Trillada de grano',
       menus: [
         {
-          title: 'Dashboard',
+          title: 'Lotes',
           icon: 'mdi mdi-gauge',
           subMenus: [
-            { title: 'Minimal', url: '' },
-            { title: 'Analytical', url: '' },
-            { title: 'Demographical', url: '' },
-            { title: 'Modern', url: '' },
+            { title: 'Entrada', url: './input' },
+            { title: 'Proceso', url: './process' },
+            { title: 'Salida', url: './output' },
           ],
         },
-        {
-          title: 'Apps',
-          icon: 'mdi mdi-bullseye',
-          subMenus: [
-            { title: 'Calendar', url: '' },
-            { title: 'Chat app', url: '' },
-            { title: 'Support Ticket', url: '' },
-          ],
-        },
+        // {
+        //   title: 'Apps',
+        //   icon: 'mdi mdi-bullseye',
+        //   subMenus: [
+        //     { title: 'Calendar', url: '' },
+        //     { title: 'Chat app', url: '' },
+        //     { title: 'Support Ticket', url: '' },
+        //   ],
+        // },
       ],
     },
     {
-      sectionTitle: 'forms, tables & widgets',
+      sectionTitle: 'Administración',
       menus: [
         {
-          title: 'Forms',
-          icon: 'mdi mdi-file',
+          title: 'Mantenimientos',
+          icon: 'mdi mdi-account-multiple',
           subMenus: [
-            { title: 'Basic Forms', url: '' },
-            { title: 'Form Layouts', url: '' },
-            { title: 'Form Addons', url: '' },
+            { title: 'Productos', url: './products' },
+            { title: 'Proveedores', url: './suppliers' },
+            { title: 'Clientes', url: './clients' },
+            { title: 'Empleados', url: './employees' },
+            { title: 'Usuarios', url: './users' },
           ],
         },
-        {
-          title: 'Basic Tables',
-          icon: 'mdi mdi-table',
-          subMenus: [
-            { title: 'Basic Tables', url: '' },
-            { title: 'Table Layouts', url: '' },
-            { title: 'Data Tables', url: '' },
-          ],
-        },
-      ],
-    },
-    {
-      sectionTitle: 'extra components',
-      menus: [
-        {
-          title: 'Page Layout',
-          icon: 'mdi mdi-book-multiple',
-          subMenus: [
-            { title: '1 Column', url: '' },
-            { title: 'Fix header', url: '' },
-            { title: 'Fix sidebar', url: '' },
-          ],
-        },
-        {
-          title: 'Sample Pages',
-          icon: 'mdi mdi-book-open-variant',
-          subMenus: [
-            { title: 'Starter Kit', url: '' },
-            { title: 'Blank page', url: '' },
-            { title: 'Profile page', url: '' },
-          ],
-        },
+        // {
+        //   title: 'Basic Tables',
+        //   icon: 'mdi mdi-table',
+        //   subMenus: [
+        //     { title: 'Basic Tables', url: '' },
+        //     { title: 'Table Layouts', url: '' },
+        //     { title: 'Data Tables', url: '' },
+        //   ],
+        // },
       ],
     },
   ];
